@@ -1,0 +1,36 @@
+{
+  "name": "samanvay-admin",
+  "version": "1.0.0",
+  "description": "Admin app to store and manage data for Samanvay Foundation",
+  "type": "module",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "NODE_ENV=development nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+    "staging": "NODE_ENV=staging ts-node src/app.ts",
+    "prod": "NODE_ENV=production ts-node src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,ts}'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.8",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.25.0"
+  },
+  "keywords": [],
+  "author": "Pranav Ruparelia",
+  "license": "ISC"
+}
