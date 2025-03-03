@@ -2,7 +2,6 @@
   "name": "samanvay-admin",
   "version": "1.0.0",
   "description": "Admin app to store and manage data for Samanvay Foundation",
-  "type": "module",
   "main": "dist/app.ts",
   "scripts": {
     "start": "ts-node src/app.ts",
@@ -11,7 +10,7 @@
     "prod": "NODE_ENV=production ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint 'src/**/*.{js,ts}'",
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -28,6 +27,7 @@
     "globals": "^16.0.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.25.0"
   },
