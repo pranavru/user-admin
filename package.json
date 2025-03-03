@@ -4,7 +4,7 @@
   "description": "Admin app to store and manage data for Samanvay Foundation",
   "main": "dist/app.ts",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "node dist/app.js",
     "dev": "NODE_ENV=development nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
     "staging": "NODE_ENV=staging ts-node src/app.ts",
     "prod": "NODE_ENV=production ts-node src/app.ts",
@@ -13,8 +13,8 @@
     "build": "rm -rf dist && tsc"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^8.11.0"
+    "express": "4.21.2",
+    "mongoose": "8.11.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
